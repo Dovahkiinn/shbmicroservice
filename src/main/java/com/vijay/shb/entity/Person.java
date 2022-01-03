@@ -37,7 +37,7 @@ public class Person {
 	private final Set<PersonAccount>  accounts;
 	
 	@SuppressWarnings("unused")
-	private Person() {
+	Person() {
 	
 		this.name = null;
 		this.address = null;

@@ -15,7 +15,7 @@
 	<name>shb</name>
 	<description>Demo project for medicine discount</description>
 	<properties>
-		<java.version>9</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

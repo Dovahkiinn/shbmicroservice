@@ -40,7 +40,7 @@ public class PersonAccount {
 	private final BigDecimal amount;
 	
 	@SuppressWarnings("unused")
-	private PersonAccount() {
+	PersonAccount() {
 		this.accountType = null;
 		this.person = null;
 		this.accountNumber = 0;

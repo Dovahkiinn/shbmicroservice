@@ -19,17 +19,24 @@ import org.hibernate.annotations.Immutable;
 @Entity
 @Immutable
 public class Transactions {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	
+
 	private final LocalDateTime transactionTime;
-	
+
 	private final long transactionAmount;
-	
+
+	Transactions() {
+
+		this.transactionTime = null;
+		this.transactionAmount = 0l;
+		this.account = null;
+	}
+
 	public Transactions(LocalDateTime transactionTime, long transactionAmount, PersonAccount account) {
-		
+
 		this.transactionTime = transactionTime;
 		this.transactionAmount = transactionAmount;
 		this.account = account;
